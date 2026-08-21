@@ -1,0 +1,5 @@
+# Python Dependencies for OpenModelica Runner Desktop Application
+PyQt6>=6.4.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+numpy>=1.23.0

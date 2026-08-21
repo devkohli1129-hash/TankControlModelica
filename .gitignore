@@ -1,0 +1,28 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Large Installers & Redundant Setup Files (>100MB)
+*.exe.iso
+OpenModelica-*.exe
+VC_redist.*.exe
+
+# IDE Configuration
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Temporary output logs
+*.log
+scratch_test*/

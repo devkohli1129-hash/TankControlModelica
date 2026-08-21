@@ -1,0 +1,82 @@
+LOG_SOLVER        | info    | -override=startTime=0s,stopTime=3s
+LOG_SOLVER        | info    | -overrideFile=[not given]
+LOG_STDOUT        | warning | simulation_input_xml.c: override variable name not found in model: startTime
+LOG_STDOUT        | warning | simulation_input_xml.c: override variable name not found in model: stopTime
+LOG_SOLVER        | info    | override done!
+LOG_SIMULATION    | info    | Read all Experiment values:
+|                 | |       | | startTime = 0
+|                 | |       | | stopTime = 1
+|                 | |       | | stepSize = 0.002
+|                 | |       | | tolerance = 1e-06
+|                 | |       | | solver method: dassl
+|                 | |       | | output format: mat
+|                 | |       | | variable filter: .*
+LOG_SIMULATION    | info    | OPENMODELICAHOME: C:/Program Files/OpenModelica1.27.0-64bit
+LOG_DEBUG         | info    | read xml file for real states
+LOG_DEBUG         | info    | Real tank1.h(start=0, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank1.h from setup file
+LOG_DEBUG         | info    | Real tank2.h(start=0, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank2.h from setup file
+LOG_DEBUG         | info    | read xml file for real state derivatives
+LOG_DEBUG         | info    | Real der(tank1.h)(start=0, fixed=false, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var der(tank1.h) from setup file
+LOG_DEBUG         | info    | Real der(tank2.h)(start=0, fixed=false, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var der(tank2.h) from setup file
+LOG_DEBUG         | info    | read xml file for real algebraics
+LOG_DEBUG         | info    | Real $cse1(start=0, fixed=false, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var $cse1 from setup file
+LOG_DEBUG         | info    | filtering protected variable $cse1
+LOG_DEBUG         | info    | filtering variable $cse1 due to HideResult annotation
+LOG_DEBUG         | info    | Real tank2.Q1(start=0.001, fixed=false, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank2.Q1 from setup file
+LOG_DEBUG         | info    | Real tank2.T(start=0, fixed=false, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank2.T from setup file
+LOG_DEBUG         | info    | read xml file for integer variables
+LOG_DEBUG         | info    | read xml file for boolean variables
+LOG_DEBUG         | info    | read xml file for string variables
+LOG_DEBUG         | info    | read xml file for real parameters
+LOG_DEBUG         | info    | Real tank1.A(start=1, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank1.A from setup file
+LOG_DEBUG         | info    | Real tank1.Qin(start=2, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank1.Qin from setup file
+LOG_DEBUG         | info    | Real tank2.A(start=1, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank2.A from setup file
+LOG_DEBUG         | info    | Real tank2.V(start=10, fixed=true, useNominal=false, nominal=1, min=-1.79769e+308, max=1.79769e+308)
+LOG_DEBUG         | info    | read var tank2.V from setup file
+LOG_DEBUG         | info    | read xml file for integer parameters
+LOG_DEBUG         | info    | read xml file for boolean parameters
+LOG_DEBUG         | info    | read xml file for string parameters
+LOG_DEBUG         | info    | Read XML file for real alias vars
+LOG_DEBUG         | info    | read var tank1.Qo from setup file
+LOG_DEBUG         | info    | read for tank1.Qo negated 0 from setup file
+LOG_DEBUG         | info    | read var tank1.flowConnect.F from setup file
+LOG_DEBUG         | info    | read for tank1.flowConnect.F negated 0 from setup file
+LOG_DEBUG         | info    | read var tank2.flowConnect.F from setup file
+LOG_DEBUG         | info    | read for tank2.flowConnect.F negated 0 from setup file
+LOG_DEBUG         | info    | Read XML file for integer alias vars
+LOG_DEBUG         | info    | Read XML file for boolean alias vars
+LOG_DEBUG         | info    | Read XML file for string alias vars
+LOG_SPATIALDISTR  | info    | Allocating memory for 0 spatial distribution(s).
+LOG_MIXED         | info    | initialize mixed system solvers
+|                 | |       | | 0 mixed systems
+LOG_LS            | info    | initialize linear system solvers
+|                 | |       | | 0 linear systems
+LOG_NLS           | info    | initialize non-linear system solvers
+|                 | |       | | 0 non-linear systems
+LOG_SOLVER        | info    | numberOfIntervals = 500
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='TwoConnectedTanks_res.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_EVENTS_V      | info    | Set tolerance for zero-crossing hysteresis to: 1.000000e-10
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+LOG_SOLVER_V      | info    | 1. tank1.h -> 1e-06
+LOG_SOLVER_V      | info    | 2. tank2.h -> 1e-06
+LOG_SOLVER        | info    | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+LOG_ASSERT        | debug   | Could not open sparsity pattern file TwoConnectedTanks_JacA.bin.
+LOG_MIXED         | info    | free mixed system solvers
+LOG_LS_V          | info    | free linear system solvers
+LOG_NLS           | info    | free non-linear system solvers
+LOG_SPATIALDISTR  | info    | Freeing 0 spatial distribution(s).
